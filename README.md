@@ -51,6 +51,13 @@ This fork allows Claude Max subscribers to use their subscription in GitHub Acti
    - `CLAUDE_ACCESS_TOKEN`: Your Claude OAuth access token
    - `CLAUDE_REFRESH_TOKEN`: Your Claude OAuth refresh token
    - `CLAUDE_EXPIRES_AT`: The token expiration timestamp
+   
+   **Automated Secret Sync**: Use the provided script to sync your Claude credentials to multiple repositories:
+   ```bash
+   ./scripts/sync-claude-secrets.sh owner/repo1,owner/repo2
+   ```
+   This script reads credentials from `~/.claude/.credentials.json` and sets the required GitHub secrets automatically.
+
 4. Use the OAuth configuration in your workflow (see examples below)
 
 ## Usage
