@@ -20,7 +20,25 @@ A general-purpose [Claude Code](https://claude.ai/code) action for GitHub PRs an
 - 📋 **Progress Tracking**: Visual progress indicators with checkboxes that dynamically update as Claude completes tasks
 - 🏃 **Runs on Your Infrastructure**: The action executes entirely on your own GitHub runner (Anthropic API calls go to your chosen provider)
 
-## Quickstart
+## Quickstart for Claude Max Subscribers
+
+### Quick OAuth Setup (Recommended for Claude Max)
+
+If you have a Claude Max subscription, you can use OAuth authentication:
+
+1. **Run the setup script**:
+   ```bash
+   ./scripts/setup-oauth.sh
+   ```
+   This will guide you through extracting your OAuth credentials and setting up GitHub secrets.
+
+2. **Install the Claude GitHub app**: https://github.com/apps/claude
+
+3. **You're ready!** Claude will respond to `@claude` mentions in your PRs and issues.
+
+For detailed instructions, see [OAUTH_SETUP.md](./OAUTH_SETUP.md) (English) or [OAUTH_SETUP_JP.md](./OAUTH_SETUP_JP.md) (日本語).
+
+### Alternative Setup Methods
 
 The easiest way to set up this action is through [Claude Code](https://claude.ai/code) in the terminal. Just open `claude` and run `/install-github-app`.
 
